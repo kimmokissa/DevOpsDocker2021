@@ -1,0 +1,16 @@
+C:\Users\kimmo>docker run -it ubuntu
+root@1f132f92bdf8:/# apt-get update
+root@1f132f92bdf8:/# apt-get install curl
+
+root@1f132f92bdf8:/# sh -c 'echo "input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+root@1f132f92bdf8:/#
